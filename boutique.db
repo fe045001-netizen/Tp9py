@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS produit (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  -- identifiant unique automatique
+    nom TEXT NOT NULL,                      -- nom du produit obligatoire
+    prix REAL NOT NULL                      -- prix du produit obligatoire
+);
+CREATE TABLE IF NOT EXISTS client (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  -- identifiant unique automatique
+    nom TEXT NOT NULL,                     -- nom du client obligatoire
+    email TEXT UNIQUE NOT NULL             -- email unique obligatoire
+);
